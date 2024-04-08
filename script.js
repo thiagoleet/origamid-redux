@@ -10,6 +10,13 @@ async function login(user) {
   }
 
   await store.dispatch(userFetch(state.token.data));
+  state = store.getState();
+
+  const emailElement = document.querySelector("#email");
+  const userElement = document.querySelector("#user");
+
+  emailElement.textContent = state.user.data.email;
+  userElement.textContent = state.user.data.username;
 }
 
 login({ username: "dog", password: "dog" });

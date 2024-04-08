@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redux</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
     <script src="./redux.min.js"></script>
   </head>
   <body>
-    <ul>
-      <li id="item1" data-slide="1">Item 1</li>
-      <li id="item2" data-slide="2">Item 2</li>
-      <li id="item3" data-slide="3">Item 3</li>
-    </ul>
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img
+                  src="https://bulma.io/assets/images/placeholders/96x96.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4" id="email">Email</p>
+              <p class="subtitle is-6" id="user">@username</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js" type="module"></script>
   </body>
 </html>
